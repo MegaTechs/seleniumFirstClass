@@ -35,7 +35,10 @@ public class nopcommerce {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.manage().window().maximize();
+       // WebDriver a=new ChromeDriver();
         Actions actions = new Actions(driver);
+
+
         //Retrieve WebElement 'Music' to perform mouse hover
         WebElement menuOption = driver.findElement(By.xpath("//a[text()='Computers '][1]"));
         //Mouse hover menuOption 'Music'
