@@ -13,14 +13,14 @@ import java.util.concurrent.TimeUnit;
 public class nopcommerce {
 
     @Test
-    public void clickOnRegisterLink(){
+    public void clickOnRegisterLink() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://demo.nopcommerce.com/");
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        WebElement RegisterLink= driver.findElement(By.xpath(" //a[text()='Register']"));
+        WebElement RegisterLink = driver.findElement(By.xpath(" //a[text()='Register']"));
         RegisterLink.click();
 
 
@@ -35,7 +35,7 @@ public class nopcommerce {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-       // WebDriver a=new ChromeDriver();
+        // WebDriver a=new ChromeDriver();
         Actions actions = new Actions(driver);
 
 
@@ -63,69 +63,70 @@ public class nopcommerce {
         driver.manage().window().maximize();
         WebElement selectMenuOption = driver.findElement(By.id("small-searchterms"));
         selectMenuOption.sendKeys("Books");
-        WebElement searchButton= driver.findElement(By.xpath(".//button[@class='button-1 search-box-button']"));
-Thread.sleep(4000);
+        WebElement searchButton = driver.findElement(By.xpath(".//button[@class='button-1 search-box-button']"));
+        Thread.sleep(4000);
         searchButton.click();
         driver.close();
 
     }
 
     @Test
-    public void selectRadioButtonMale(){
+    public void selectRadioButtonMale() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://demo.nopcommerce.com/");
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        WebElement RegisterLink= driver.findElement(By.xpath(" //a[text()='Register']"));
+        WebElement RegisterLink = driver.findElement(By.xpath(" //a[text()='Register']"));
         RegisterLink.click();
-        WebElement selectRadioButtonMale= driver.findElement(By.xpath("//input[@id='gender-male']"));
+        WebElement selectRadioButtonMale = driver.findElement(By.xpath("//input[@id='gender-male']"));
         selectRadioButtonMale.click();
         driver.close();
         //input[@id='FirstName']
     }
 
     @Test
-    public void inputFirstName(){
+    public void inputFirstName() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://demo.nopcommerce.com/");
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        WebElement RegisterLink= driver.findElement(By.xpath(" //a[text()='Register']"));
+        WebElement RegisterLink = driver.findElement(By.xpath(" //a[text()='Register']"));
         RegisterLink.click();
-        WebElement inputFirstName= driver.findElement(By.xpath("//input[@id='FirstName']"));
+        WebElement inputFirstName = driver.findElement(By.xpath("//input[@id='FirstName']"));
         inputFirstName.sendKeys("Mohammad");
         driver.close();
 
     }
 
     @Test
-    public void inputLastName(){
+    public void inputLastName() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://demo.nopcommerce.com/");
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        WebElement RegisterLink= driver.findElement(By.xpath(" //a[text()='Register']"));
+        WebElement RegisterLink = driver.findElement(By.xpath(" //a[text()='Register']"));
         RegisterLink.click();
-        WebElement inputLastName= driver.findElement(By.xpath("//input[@id='FirstName']"));
+        WebElement inputLastName = driver.findElement(By.xpath("//input[@id='FirstName']"));
         inputLastName.sendKeys("Haque");
         driver.close();
 
     }
+
     @Test
-    public void SelectDropDown(){
+    public void SelectDropDown() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://demo.nopcommerce.com/");
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        WebElement RegisterLink= driver.findElement(By.xpath(" //a[text()='Register']"));
+        WebElement RegisterLink = driver.findElement(By.xpath(" //a[text()='Register']"));
         RegisterLink.click();
         Select SelectDropDown = new Select(driver.findElement(By.xpath("//select[@name='DateOfBirthDay']")));
         SelectDropDown.selectByVisibleText("9");
@@ -139,32 +140,33 @@ Thread.sleep(4000);
     }
 
     @Test
-    public void inputEmail(){
+    public void inputEmail() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://demo.nopcommerce.com/");
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        WebElement RegisterLink= driver.findElement(By.xpath(" //a[text()='Register']"));
+        WebElement RegisterLink = driver.findElement(By.xpath(" //a[text()='Register']"));
         RegisterLink.click();
-        WebElement inputLastName= driver.findElement(By.xpath("//input[@id='FirstName']"));
+        WebElement inputLastName = driver.findElement(By.xpath("//input[@id='FirstName']"));
         inputLastName.sendKeys("Haque");
         driver.close();
 
 
     }
+
     @Test
-    public void SelectNewsletterCheckBox(){
+    public void SelectNewsletterCheckBox() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://demo.nopcommerce.com/");
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        WebElement RegisterLink= driver.findElement(By.xpath(" //a[text()='Register']"));
+        WebElement RegisterLink = driver.findElement(By.xpath(" //a[text()='Register']"));
         RegisterLink.click();
-        WebElement SelectNewsletterCheckBox= driver.findElement(By.xpath("//input[@id='Newsletter']"));
+        WebElement SelectNewsletterCheckBox = driver.findElement(By.xpath("//input[@id='Newsletter']"));
         SelectNewsletterCheckBox.click();
         driver.close();
 
